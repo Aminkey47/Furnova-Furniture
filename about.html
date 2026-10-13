@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover the story, mission, vision and values behind Furnova.">
+
+    <title>About Us | Furnova</title>
+
+    <!-- Tailwind CSS v4 Browser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Furnova Brand Colours -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-furnova-navy: #14283F;
+            --color-furnova-ivory: #F8F5EF;
+            --color-furnova-copper: #B8734E;
+            --color-furnova-sage: #879681;
+            --color-furnova-oak: #C5A47E;
+            --color-furnova-charcoal: #292929;
+        }
+
+        /* Consistent rounded corners for all website images */
+img {
+    border-radius: 12px;
+}
+    </style>
+</head>
+
+<body class="bg-furnova-ivory font-sans text-furnova-charcoal antialiased">
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="sticky top-0 z-50 border-b border-furnova-navy/10 bg-furnova-ivory">
+
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-10">
+
+            <!-- Brand -->
+            <a href="index.html"
+                class="text-2xl font-semibold tracking-[0.2em] text-furnova-navy">
+                FURNO<span class="text-furnova-copper">V</span>A
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-6 text-xs font-medium tracking-widest md:flex">
+
+                <a href="index.html" class="transition hover:text-furnova-copper">HOME</a>
+                <a href="about.html" class="text-furnova-copper">ABOUT</a>
+                <a href="products.html" class="transition hover:text-furnova-copper">PRODUCTS</a>
+                <a href="categories.html" class="transition hover:text-furnova-copper">CATEGORIES</a>
+                <a href="gallery.html" class="transition hover:text-furnova-copper">GALLERY</a>
+                <a href="contact.html" class="transition hover:text-furnova-copper">CONTACT</a>
+
+            </div>
+
+            <!-- Consultation Button -->
+            <a href="contact.html"
+                class="hidden border border-furnova-navy px-4 py-3 text-[10px] font-semibold tracking-widest transition hover:bg-furnova-navy hover:text-white lg:inline-block">
+                BOOK A CONSULTATION ↗
+            </a>
+
+            <!-- Mobile Navigation -->
+            <details class="relative md:hidden">
+
+                <summary class="cursor-pointer list-none border border-furnova-navy/20 px-3 py-2 text-sm">
+                    MENU ☰
+                </summary>
+
+                <div class="absolute right-0 mt-3 flex min-w-44 flex-col gap-4 border border-furnova-navy/10 bg-furnova-ivory p-5 text-xs tracking-widest shadow-xl">
+
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="categories.html">CATEGORIES</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="contact.html">CONTACT</a>
+
+                </div>
+
+            </details>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= ABOUT HERO ================= -->
+
+    <main>
+
+        <section class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 md:grid-cols-2 lg:px-10 lg:py-24">
+
+            <!-- Introduction -->
+            <div>
+
+                <p class="text-xs tracking-[0.22em] text-furnova-copper">
+                    OUR STORY
+                </p>
+
+                <h1 class="mt-5 text-5xl leading-[1.1] font-light tracking-tight text-furnova-navy sm:text-7xl">
+
+                    A home should
+
+                    <br>
+
+                    <span class="font-serif italic">
+                        feel like you.
+                    </span>
+
+                </h1>
+
+                <p class="mt-7 max-w-xl text-base leading-8 text-furnova-charcoal/75">
+                    Furnova is a furniture brand concept built around
+                    thoughtful design, welcoming spaces and the details
+                    that make a house feel like home.
+                </p>
+
+                <p class="mt-4 max-w-xl text-sm leading-7 text-furnova-charcoal/70">
+                    We believe furniture should do more than fill a room.
+                    It should support your everyday life, reflect your
+                    personality and help you feel at home.
+                </p>
+
+            </div>
+
+            <!-- About Photograph -->
+            <div class="overflow-hidden bg-[#E7E0D6]">
+
+                <img
+                    src="Images/about-new.jpg"
+                    alt="Contemporary interior featuring warm materials and elegant glass doors"
+                    class="h-80 w-full object-cover md:h-[34rem]">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MISSION, VISION AND VALUES ================= -->
+
+        <section class="bg-[#EDE7DD]">
+
+            <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-3 lg:px-10 lg:py-24">
+
+                <!-- Mission -->
+                <article>
+
+                    <p class="text-xs tracking-[0.2em] text-furnova-copper">
+                        01 / OUR MISSION
+                    </p>
+
+                    <h2 class="mt-5 text-2xl font-light text-furnova-navy">
+                        Make good design feel personal.
+                    </h2>
+
+                    <p class="mt-4 text-sm leading-7 text-furnova-charcoal/75">
+                        Our mission is to help people create comfortable,
+                        functional and beautiful spaces through thoughtful
+                        furniture and considered design.
+                    </p>
+
+                </article>
+
+
+                <!-- Vision -->
+                <article>
+
+                    <p class="text-xs tracking-[0.2em] text-furnova-copper">
+                        02 / OUR VISION
+                    </p>
+
+                    <h2 class="mt-5 text-2xl font-light text-furnova-navy">
+                        Spaces that stand the test of time.
+                    </h2>
+
+                    <p class="mt-4 text-sm leading-7 text-furnova-charcoal/75">
+                        We envision becoming a trusted furniture destination
+                        for people who value quality, comfort and timeless
+                        design.
+                    </p>
+
+                </article>
+
+
+                <!-- Values -->
+                <article>
+
+                    <p class="text-xs tracking-[0.2em] text-furnova-copper">
+                        03 / OUR VALUES
+                    </p>
+
+                    <h2 class="mt-5 text-2xl font-light text-furnova-navy">
+                        Quality. Care. Simplicity.
+                    </h2>
+
+                    <p class="mt-4 text-sm leading-7 text-furnova-charcoal/75">
+                        We value practical design, honest communication,
+                        durable materials and furniture made for everyday
+                        living.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTION PROMOTION ================= -->
+
+        <section class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 md:grid-cols-2 lg:px-10 lg:py-24">
+
+            <!-- Promotional Text -->
+            <div>
+
+                <p class="text-xs tracking-[0.22em] text-furnova-copper">
+                    MADE FOR THE EVERYDAY EXTRAORDINARY
+                </p>
+
+                <h2 class="mt-5 text-4xl leading-tight font-light text-furnova-navy sm:text-6xl">
+
+                    Small details.
+
+                    <br>
+
+                    <span class="font-serif italic">
+                        A different feeling.
+                    </span>
+
+                </h2>
+
+                <p class="mt-6 max-w-lg text-sm leading-7 text-furnova-charcoal/75">
+                    Discover furniture that brings your space together.
+                    From welcoming living rooms to restful bedrooms,
+                    find pieces that complement the way you live.
+                </p>
+
+                <a href="products.html"
+                    class="mt-8 inline-block bg-furnova-copper px-6 py-4 text-xs font-semibold tracking-widest text-white transition hover:bg-furnova-navy">
+
+                    EXPLORE THE COLLECTION ↗
+
+                </a>
+
+            </div>
+
+
+            <!-- Architectural Photograph -->
+            <div class="overflow-hidden bg-[#E7E0D6]">
+
+                <img
+                    src="Images/furnova-06.jpg"
+                    alt="Elegant contemporary interior with black-framed glass doors and warm flooring"
+                    class="h-80 w-full object-cover transition duration-500 hover:scale-[1.02] md:h-[28rem]">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CLOSING STATEMENT ================= -->
+
+        <section class="bg-furnova-navy px-5 py-16 text-center text-furnova-ivory sm:py-20">
+
+            <p class="text-xs tracking-[0.22em] text-furnova-oak">
+                THE FURNOVA PHILOSOPHY
+            </p>
+
+            <h2 class="mx-auto mt-5 max-w-3xl text-3xl leading-tight font-light sm:text-5xl">
+
+                Your home.
+
+                <span class="font-serif italic">
+                    Your story.
+                </span>
+
+                Our inspiration.
+
+            </h2>
+
+            <a href="contact.html"
+                class="mt-8 inline-block border border-furnova-ivory px-6 py-4 text-xs font-semibold tracking-widest transition hover:bg-furnova-ivory hover:text-furnova-navy">
+
+                LET'S TALK ABOUT YOUR SPACE ↗
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-furnova-navy text-furnova-ivory">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+
+            <!-- Brand -->
+            <div>
+
+                <a href="index.html" class="text-xl font-semibold tracking-[0.2em]">
+                    FURNO<span class="text-furnova-copper">V</span>A
+                </a>
+
+                <p class="mt-4 max-w-xs text-sm leading-6 text-white/65">
+                    Thoughtfully chosen furniture for spaces that feel like you.
+                </p>
+
+            </div>
+
+
+            <!-- Explore -->
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">
+                    EXPLORE
+                </h2>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-white/70">
+
+                    <a href="index.html" class="hover:text-furnova-oak">Home</a>
+                    <a href="products.html" class="hover:text-furnova-oak">Products</a>
+                    <a href="categories.html" class="hover:text-furnova-oak">Categories</a>
+                    <a href="gallery.html" class="hover:text-furnova-oak">Gallery</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Location -->
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">
+                    VISIT US
+                </h2>
+
+                <p class="mt-4 text-sm leading-6 text-white/70">
+                    Nairobi, Kenya
+                    <br>
+                    Monday–Saturday: 9 am–6 pm
+                    <br>
+                    Sunday: By appointment
+                </p>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">
+                    LET'S CONNECT
+                </h2>
+
+                <p class="mt-4 text-sm leading-6 text-white/70">
+                    Have a question about your space?
+                </p>
+
+                <a href="contact.html"
+                    class="mt-3 inline-block text-sm text-furnova-oak underline underline-offset-4">
+
+                    Contact Furnova ↗
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-white/15 px-5 py-5 text-center text-xs text-white/50">
+            © 2026 Furnova. All rights reserved.
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

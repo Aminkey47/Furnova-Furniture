@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Furnova — Redefining the Way You Live</title>
+
+    <meta name="description" content="Explore the Furnova gallery for contemporary furniture, beautiful interiors and inspiration for your home.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-furnova-navy: #14283F;
+            --color-furnova-ivory: #F8F5EF;
+            --color-furnova-copper: #B8734E;
+            --color-furnova-sage: #879681;
+            --color-furnova-oak: #C5A47E;
+            --color-furnova-charcoal: #292929;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Consistent rounded corners for all website images */
+img {
+    border-radius: 12px;
+}
+    </style>
+</head>
+
+<body class="bg-white text-furnova-charcoal antialiased">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-furnova-ivory">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
+
+            <!-- Brand -->
+            <a href="index.html"
+               class="text-2xl font-bold tracking-[0.18em] text-furnova-navy"
+               aria-label="Furnova home">
+                FURNO<span class="text-furnova-copper">V</span>A
+            </a>
+
+            <!-- Desktop navigation -->
+            <div class="hidden items-center gap-7 text-xs font-semibold uppercase tracking-widest lg:flex">
+                <a href="index.html" class="transition hover:text-furnova-copper">Home</a>
+                <a href="about.html" class="transition hover:text-furnova-copper">About</a>
+                <a href="products.html" class="transition hover:text-furnova-copper">Products</a>
+                <a href="categories.html" class="transition hover:text-furnova-copper">Categories</a>
+                <a href="gallery.html" aria-current="page"
+                   class="border-b-2 border-furnova-copper pb-1 text-furnova-copper">Gallery</a>
+                <a href="contact.html" class="transition hover:text-furnova-copper">Contact</a>
+            </div>
+
+            <!-- Consultation button -->
+            <a href="contact.html"
+               class="hidden bg-furnova-navy px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-furnova-copper md:inline-block">
+                Book a Consultation ↗
+            </a>
+
+            <!-- Mobile menu -->
+            <details class="relative lg:hidden">
+                <summary class="cursor-pointer list-none border border-furnova-navy px-4 py-2 text-sm font-semibold text-furnova-navy">
+                    MENU ☰
+                </summary>
+
+                <div class="absolute right-0 top-12 z-50 w-52 border border-gray-200 bg-white p-4 shadow-xl">
+                    <div class="flex flex-col gap-4 text-sm font-medium">
+                        <a href="index.html" class="hover:text-furnova-copper">Home</a>
+                        <a href="about.html" class="hover:text-furnova-copper">About</a>
+                        <a href="products.html" class="hover:text-furnova-copper">Products</a>
+                        <a href="categories.html" class="hover:text-furnova-copper">Categories</a>
+                        <a href="gallery.html" class="font-semibold text-furnova-copper">Gallery</a>
+                        <a href="contact.html" class="hover:text-furnova-copper">Contact</a>
+                        <a href="contact.html" class="border-t border-gray-200 pt-3 text-furnova-copper">
+                            Book a Consultation ↗
+                        </a>
+                    </div>
+                </div>
+            </details>
+
+        </nav>
+    </header>
+
+
+    <!-- ==================== PAGE INTRODUCTION ==================== -->
+    <section class="bg-furnova-ivory px-5 py-20 text-center md:py-28">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-furnova-copper">
+            A Visual Journey
+        </p>
+
+        <h1 class="mx-auto max-w-4xl text-4xl font-medium leading-tight text-furnova-navy sm:text-5xl md:text-6xl">
+            Spaces that inspire.
+            <span class="italic">Living that feels right.</span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600">
+            Discover thoughtful furniture, natural materials and timeless interiors.
+            Explore ideas that bring comfort, character and beauty into everyday living.
+        </p>
+
+        <a href="#gallery"
+           class="mt-8 inline-block border border-furnova-navy px-7 py-3 text-xs font-semibold uppercase tracking-widest text-furnova-navy transition hover:bg-furnova-navy hover:text-white">
+            Explore the Gallery ↓
+        </a>
+    </section>
+
+
+    <!-- ==================== GALLERY ==================== -->
+    <main id="gallery" class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+
+        <!-- Section heading -->
+        <div class="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+                <p class="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-furnova-copper">
+                    The Furnova Collection
+                </p>
+
+                <h2 class="text-3xl font-medium text-furnova-navy md:text-4xl">
+                    Inspiration for every space
+                </h2>
+            </div>
+
+            <p class="max-w-md text-sm leading-7 text-gray-500">
+                From relaxed living rooms to productive workspaces, find inspiration
+                for the way you want to live.
+            </p>
+        </div>
+
+
+        <!-- Gallery grid -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+            <!-- Gallery item 1 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/hero-living.jpg"
+                        alt="Contemporary living room with elegant furniture"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">01 · Living</p>
+                        <h3 class="text-2xl font-medium">The Art of Relaxing</h3>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Gallery item 2 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/gallery-interior-2.jpg"
+                        alt="Beautiful dining room designed for gathering"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">02 · Dining</p>
+                        <h3 class="text-2xl font-medium">Gather Together</h3>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Gallery item 3 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/armchair.jpg"
+                        alt="Comfortable contemporary armchair"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">03 · Details</p>
+                        <h3 class="text-2xl font-medium">A Place of Your Own</h3>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Gallery item 4 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/gallery-interior-3.jpg"
+                        alt="Calm bedroom with contemporary furniture"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">04 · Bedroom</p>
+                        <h3 class="text-2xl font-medium">Rest and Recharge</h3>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Gallery item 5 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/gallery-4.jpg"
+                        alt="Modern home office with functional furniture"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">05 · Workspace</p>
+                        <h3 class="text-2xl font-medium">Made for Ideas</h3>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Gallery item 6 -->
+            <article class="group overflow-hidden bg-furnova-ivory">
+                <div class="relative h-72 overflow-hidden sm:h-80">
+                    <img
+                        src="Images/about-new.jpg"
+                        alt="Architectural interior with large black-framed glass doors"
+                        loading="lazy"
+                        class="h-full w-full object-cover transition duration-700 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+
+                    <div class="absolute bottom-5 left-5 text-white">
+                        <p class="mb-1 text-xs uppercase tracking-widest">06 · Architecture</p>
+                        <h3 class="text-2xl font-medium">Light and Space</h3>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+
+    <!-- ==================== CALL TO ACTION ==================== -->
+    <section class="bg-furnova-navy px-5 py-16 text-center text-white md:py-20">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-furnova-oak">
+            Your Space, Your Story
+        </p>
+
+        <h2 class="mx-auto max-w-3xl text-3xl font-medium leading-tight md:text-5xl">
+            Ready to make your space feel like you?
+        </h2>
+
+        <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-gray-300">
+            Explore our furniture collection and discover pieces that suit
+            your lifestyle, taste and home.
+        </p>
+
+        <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <a href="products.html"
+               class="bg-furnova-copper px-7 py-3 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-furnova-navy">
+                Explore Products
+            </a>
+
+            <a href="contact.html"
+               class="border border-white px-7 py-3 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-furnova-navy">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-furnova-ivory px-5 py-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Brand information -->
+            <div>
+                <a href="index.html"
+                   class="text-2xl font-bold tracking-[0.18em] text-furnova-navy">
+                    FURNO<span class="text-furnova-copper">V</span>A
+                </a>
+
+                <p class="mt-4 max-w-xs text-sm leading-7 text-gray-600">
+                    Redefining the Way You Live through thoughtful design,
+                    quality furniture and timeless style.
+                </p>
+            </div>
+
+            <!-- Quick links -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="index.html" class="hover:text-furnova-copper">Home</a></li>
+                    <li><a href="about.html" class="hover:text-furnova-copper">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-furnova-copper">Products</a></li>
+                    <li><a href="categories.html" class="hover:text-furnova-copper">Categories</a></li>
+                    <li><a href="gallery.html" class="hover:text-furnova-copper">Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer care -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Customer Care
+                </h3>
+
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="contact.html" class="hover:text-furnova-copper">Contact Us</a></li>
+                    <li><a href="contact.html" class="hover:text-furnova-copper">Book a Consultation</a></li>
+                    <li><a href="products.html" class="hover:text-furnova-copper">Explore Collection</a></li>
+                </ul>
+            </div>
+
+            <!-- Brand promise -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Our Philosophy
+                </h3>
+
+                <p class="text-sm leading-7 text-gray-600">
+                    Beautiful spaces begin with thoughtful choices.
+                    We believe furniture should feel as good as it looks.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-gray-300 pt-6 text-xs text-gray-500 sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Furnova. All rights reserved.</p>
+            <p>Redefining the Way You Live.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

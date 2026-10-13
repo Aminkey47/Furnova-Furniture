@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Furnova — Redefining the Way You Live</title>
+
+    <meta name="description" content="Get in touch with Furnova for furniture enquiries, product information and design consultations.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-furnova-navy: #14283F;
+            --color-furnova-ivory: #F8F5EF;
+            --color-furnova-copper: #B8734E;
+            --color-furnova-sage: #879681;
+            --color-furnova-oak: #C5A47E;
+            --color-furnova-charcoal: #292929;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Consistent rounded corners for all website images */
+img {
+    border-radius: 12px;
+}
+    </style>
+</head>
+
+<body class="bg-white text-furnova-charcoal antialiased">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-furnova-ivory">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-8">
+
+            <a href="index.html"
+               class="text-2xl font-bold tracking-[0.18em] text-furnova-navy"
+               aria-label="Furnova home">
+                FURNO<span class="text-furnova-copper">V</span>A
+            </a>
+
+            <!-- Desktop navigation -->
+            <div class="hidden items-center gap-7 text-xs font-semibold uppercase tracking-widest lg:flex">
+                <a href="index.html" class="transition hover:text-furnova-copper">Home</a>
+                <a href="about.html" class="transition hover:text-furnova-copper">About</a>
+                <a href="products.html" class="transition hover:text-furnova-copper">Products</a>
+                <a href="categories.html" class="transition hover:text-furnova-copper">Categories</a>
+                <a href="gallery.html" class="transition hover:text-furnova-copper">Gallery</a>
+                <a href="contact.html" aria-current="page"
+                   class="border-b-2 border-furnova-copper pb-1 text-furnova-copper">Contact</a>
+            </div>
+
+            <a href="#contact-form"
+               class="hidden bg-furnova-navy px-5 py-3 text-xs font-semibold uppercase tracking-wider text-white transition hover:bg-furnova-copper md:inline-block">
+                Send an Enquiry ↗
+            </a>
+
+            <!-- Mobile navigation -->
+            <details class="relative lg:hidden">
+                <summary class="cursor-pointer list-none border border-furnova-navy px-4 py-2 text-sm font-semibold text-furnova-navy">
+                    MENU ☰
+                </summary>
+
+                <div class="absolute right-0 top-12 z-50 w-52 border border-gray-200 bg-white p-4 shadow-xl">
+                    <div class="flex flex-col gap-4 text-sm font-medium">
+                        <a href="index.html" class="hover:text-furnova-copper">Home</a>
+                        <a href="about.html" class="hover:text-furnova-copper">About</a>
+                        <a href="products.html" class="hover:text-furnova-copper">Products</a>
+                        <a href="categories.html" class="hover:text-furnova-copper">Categories</a>
+                        <a href="gallery.html" class="hover:text-furnova-copper">Gallery</a>
+                        <a href="contact.html" class="font-semibold text-furnova-copper">Contact</a>
+                        <a href="#contact-form" class="border-t border-gray-200 pt-3 text-furnova-copper">
+                            Send an Enquiry ↗
+                        </a>
+                    </div>
+                </div>
+            </details>
+
+        </nav>
+    </header>
+
+
+    <!-- ==================== PAGE INTRODUCTION ==================== -->
+    <section class="bg-furnova-ivory px-5 py-20 text-center md:py-28">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-furnova-copper">
+            We'd Love to Hear from You
+        </p>
+
+        <h1 class="mx-auto max-w-4xl text-4xl font-medium leading-tight text-furnova-navy sm:text-5xl md:text-6xl">
+            Let's create a space
+            <span class="italic">you love.</span>
+        </h1>
+
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600">
+            Have a question about our furniture or need help choosing the right
+            pieces for your home? Get in touch with our team.
+        </p>
+    </section>
+
+
+    <!-- ==================== CONTACT INFORMATION ==================== -->
+    <main class="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
+
+        <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20">
+
+            <!-- Left column: Contact details -->
+            <section>
+                <p class="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-furnova-copper">
+                    Contact Information
+                </p>
+
+                <h2 class="text-3xl font-medium text-furnova-navy md:text-4xl">
+                    We're here to help.
+                </h2>
+
+                <p class="mt-5 max-w-lg text-sm leading-7 text-gray-600">
+                    Whether you're furnishing a new home, refreshing a room or
+                    exploring our collection, we'd be happy to hear from you.
+                </p>
+
+
+                <!-- Email -->
+                <div class="mt-10 flex gap-5 border-b border-gray-200 pb-7">
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center bg-furnova-ivory text-xl text-furnova-copper">
+                        ✉
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-furnova-navy">Email Us</h3>
+
+                        <!-- Replace with your real business email -->
+                        <a href="mailto:hello@furnova.example"
+                           class="mt-2 inline-block text-sm text-gray-600 transition hover:text-furnova-copper">
+                            hello@furnova.com
+                        </a>
+
+                        <p class="mt-1 text-xs leading-5 text-gray-500">
+                            For product enquiries and general questions.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Phone -->
+                <div class="flex gap-5 border-b border-gray-200 py-7">
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center bg-furnova-ivory text-xl text-furnova-copper">
+                        ☎
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-furnova-navy">Call Us</h3>
+
+                        <!-- Replace with your real business number -->
+                        <a href="tel:+254722334455"
+                           class="mt-2 inline-block text-sm text-gray-600 transition hover:text-furnova-copper">
+                            +254 722334455
+                        </a>
+
+                        <p class="mt-1 text-xs leading-5 text-gray-500">
+                            Contact us during our business hours.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Location -->
+                <div class="flex gap-5 border-b border-gray-200 py-7">
+                    <div class="flex h-12 w-12 shrink-0 items-center justify-center bg-furnova-ivory text-xl text-furnova-copper">
+                        ⌖
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-furnova-navy">Visit Us</h3>
+
+                        <p class="mt-2 text-sm leading-6 text-gray-600">
+                            Nairobi, Kenya
+                        </p>
+
+                        <p class="mt-1 text-xs leading-5 text-gray-500">
+                            Contact us to confirm our showroom location.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Opening hours -->
+                <div class="mt-10">
+                    <h3 class="text-lg font-semibold text-furnova-navy">
+                        Opening Hours
+                    </h3>
+
+                    <div class="mt-5 max-w-md space-y-4 text-sm">
+
+                        <div class="flex justify-between gap-4 border-b border-gray-100 pb-3">
+                            <span class="text-gray-600">Monday – Friday</span>
+                            <span class="font-medium text-furnova-navy">9:00 am – 6:00 pm</span>
+                        </div>
+
+                        <div class="flex justify-between gap-4 border-b border-gray-100 pb-3">
+                            <span class="text-gray-600">Saturday</span>
+                            <span class="font-medium text-furnova-navy">10:00 am – 4:00 pm</span>
+                        </div>
+
+                        <div class="flex justify-between gap-4 border-b border-gray-100 pb-3">
+                            <span class="text-gray-600">Sunday & Public Holidays</span>
+                            <span class="font-medium text-furnova-navy">Closed</span>
+                        </div>
+
+                    </div>
+
+                    <p class="mt-4 text-xs leading-5 text-gray-500">
+                        These are sample business hours. Update them to match your
+                        actual or intended operating schedule.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Right column: Contact form -->
+            <section id="contact-form" class="bg-furnova-ivory p-6 sm:p-10">
+                <p class="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-furnova-copper">
+                    Send Us a Message
+                </p>
+
+                <h2 class="text-3xl font-medium text-furnova-navy">
+                    How can we help?
+                </h2>
+
+                <p class="mt-4 text-sm leading-7 text-gray-600">
+                    Complete the form below and tell us what you're looking for.
+                </p>
+
+                <form action="#" method="post" class="mt-8 space-y-6">
+
+                    <!-- Full name -->
+                    <div>
+                        <label for="name"
+                               class="mb-2 block text-sm font-medium text-furnova-navy">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-gray-400 focus:border-furnova-copper focus:ring-1 focus:ring-furnova-copper">
+                    </div>
+
+
+                    <!-- Email address -->
+                    <div>
+                        <label for="email"
+                               class="mb-2 block text-sm font-medium text-furnova-navy">
+                            Email Address *
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-gray-400 focus:border-furnova-copper focus:ring-1 focus:ring-furnova-copper">
+                    </div>
+
+
+                    <!-- Phone number -->
+                    <div>
+                        <label for="phone"
+                               class="mb-2 block text-sm font-medium text-furnova-navy">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+254..."
+                            autocomplete="tel"
+                            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-gray-400 focus:border-furnova-copper focus:ring-1 focus:ring-furnova-copper">
+                    </div>
+
+
+                    <!-- Enquiry type -->
+                    <div>
+                        <label for="subject"
+                               class="mb-2 block text-sm font-medium text-furnova-navy">
+                            What Are You Interested In? *
+                        </label>
+
+                        <select
+                            id="subject"
+                            name="subject"
+                            required
+                            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-furnova-copper focus:ring-1 focus:ring-furnova-copper">
+
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="product-enquiry">Product Enquiry</option>
+                            <option value="consultation">Design Consultation</option>
+                            <option value="custom-furniture">Custom Furniture</option>
+                            <option value="delivery">Delivery Information</option>
+                            <option value="other">Other</option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message"
+                               class="mb-2 block text-sm font-medium text-furnova-navy">
+                            Your Message *
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us a little about what you need..."
+                            required
+                            class="w-full resize-y border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-gray-400 focus:border-furnova-copper focus:ring-1 focus:ring-furnova-copper"></textarea>
+                    </div>
+
+
+                    <!-- Submit button -->
+                    <button
+                        type="submit"
+                        class="w-full bg-furnova-navy px-6 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-furnova-copper focus:outline-none focus:ring-2 focus:ring-furnova-copper focus:ring-offset-2">
+                        Send Your Enquiry →
+                    </button>
+
+                    <p class="text-xs leading-5 text-gray-500">
+                        Fields marked with * are required.
+                    </p>
+
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ==================== FINAL CALL TO ACTION ==================== -->
+    <section class="bg-furnova-navy px-5 py-16 text-center text-white md:py-20">
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-furnova-oak">
+            Furnova · Redefining the Way You Live
+        </p>
+
+        <h2 class="mx-auto max-w-3xl text-3xl font-medium leading-tight md:text-5xl">
+            Thoughtful furniture.
+            <span class="italic">Meaningful spaces.</span>
+        </h2>
+
+        <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-gray-300">
+            Discover furniture designed to make your everyday spaces
+            more comfortable, functional and beautiful.
+        </p>
+
+        <a href="products.html"
+           class="mt-8 inline-block bg-furnova-copper px-7 py-4 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-white hover:text-furnova-navy">
+            Explore Our Collection →
+        </a>
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-furnova-ivory px-5 py-12">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+            <!-- Brand -->
+            <div>
+                <a href="index.html"
+                   class="text-2xl font-bold tracking-[0.18em] text-furnova-navy">
+                    FURNO<span class="text-furnova-copper">V</span>A
+                </a>
+
+                <p class="mt-4 max-w-xs text-sm leading-7 text-gray-600">
+                    Redefining the Way You Live through thoughtful design,
+                    quality furniture and timeless style.
+                </p>
+            </div>
+
+
+            <!-- Explore links -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="index.html" class="hover:text-furnova-copper">Home</a></li>
+                    <li><a href="about.html" class="hover:text-furnova-copper">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-furnova-copper">Products</a></li>
+                    <li><a href="categories.html" class="hover:text-furnova-copper">Categories</a></li>
+                    <li><a href="gallery.html" class="hover:text-furnova-copper">Gallery</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Customer care -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Customer Care
+                </h3>
+
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li><a href="contact.html" class="hover:text-furnova-copper">Contact Us</a></li>
+                    <li><a href="#contact-form" class="hover:text-furnova-copper">Send an Enquiry</a></li>
+                    <li><a href="products.html" class="hover:text-furnova-copper">Our Collection</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Philosophy -->
+            <div>
+                <h3 class="mb-4 text-sm font-bold uppercase tracking-widest text-furnova-navy">
+                    Our Philosophy
+                </h3>
+
+                <p class="text-sm leading-7 text-gray-600">
+                    Beautiful spaces begin with thoughtful choices.
+                    We believe furniture should feel as good as it looks.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-gray-300 pt-6 text-xs text-gray-500 sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Furnova. All rights reserved.</p>
+            <p>Redefining the Way You Live.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

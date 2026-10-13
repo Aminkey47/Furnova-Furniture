@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Furnova's furniture collection, from sofas and dining tables to beds and home office furniture.">
+
+    <title>Our Collection | Furnova</title>
+
+    <!-- Tailwind CSS v4 Browser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Furnova Brand Colours -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-furnova-navy: #14283F;
+            --color-furnova-ivory: #F8F5EF;
+            --color-furnova-copper: #B8734E;
+            --color-furnova-sage: #879681;
+            --color-furnova-oak: #C5A47E;
+            --color-furnova-charcoal: #292929;
+        }
+
+        /* Consistent rounded corners for all website images */
+img {
+    border-radius: 12px;
+}
+    </style>
+</head>
+
+<body class="bg-furnova-ivory font-sans text-furnova-charcoal antialiased">
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="sticky top-0 z-50 border-b border-furnova-navy/10 bg-furnova-ivory">
+
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 lg:px-10">
+
+            <a href="index.html"
+                class="text-2xl font-semibold tracking-[0.2em] text-furnova-navy">
+                FURNO<span class="text-furnova-copper">V</span>A
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-6 text-xs font-medium tracking-widest md:flex">
+
+                <a href="index.html" class="transition hover:text-furnova-copper">HOME</a>
+                <a href="about.html" class="transition hover:text-furnova-copper">ABOUT</a>
+                <a href="products.html" class="text-furnova-copper">PRODUCTS</a>
+                <a href="categories.html" class="transition hover:text-furnova-copper">CATEGORIES</a>
+                <a href="gallery.html" class="transition hover:text-furnova-copper">GALLERY</a>
+                <a href="contact.html" class="transition hover:text-furnova-copper">CONTACT</a>
+
+            </div>
+
+            <a href="contact.html"
+                class="hidden border border-furnova-navy px-4 py-3 text-[10px] font-semibold tracking-widest transition hover:bg-furnova-navy hover:text-white lg:inline-block">
+                BOOK A CONSULTATION ↗
+            </a>
+
+            <!-- Mobile Navigation -->
+            <details class="relative md:hidden">
+
+                <summary class="cursor-pointer list-none border border-furnova-navy/20 px-3 py-2 text-sm">
+                    MENU ☰
+                </summary>
+
+                <div class="absolute right-0 mt-3 flex min-w-44 flex-col gap-4 border border-furnova-navy/10 bg-furnova-ivory p-5 text-xs tracking-widest shadow-xl">
+
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="products.html">PRODUCTS</a>
+                    <a href="categories.html">CATEGORIES</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="contact.html">CONTACT</a>
+
+                </div>
+
+            </details>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE INTRODUCTION ================= -->
+
+    <main>
+
+        <section class="bg-[#EDE7DD] px-5 py-16 text-center sm:py-20 lg:py-24">
+
+            <p class="text-xs tracking-[0.22em] text-furnova-copper">
+                THE FURNOVA COLLECTION
+            </p>
+
+            <h1 class="mt-5 text-5xl leading-tight font-light tracking-tight text-furnova-navy sm:text-6xl lg:text-7xl">
+
+                Furniture to
+
+                <span class="font-serif italic">
+                    come home to.
+                </span>
+
+            </h1>
+
+            <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-furnova-charcoal/70 sm:text-base">
+
+                Discover considered pieces for living, dining, resting
+                and working. Find furniture that complements your space
+                and the way you live.
+
+            </p>
+
+        </section>
+
+
+        <!-- ================= COLLECTION INTRODUCTION ================= -->
+
+        <section class="mx-auto max-w-7xl px-5 pt-12 lg:px-10">
+
+            <div class="flex flex-col justify-between gap-5 border-b border-furnova-navy/15 pb-6 sm:flex-row sm:items-center">
+
+                <div>
+
+                    <p class="text-xs tracking-[0.2em] text-furnova-copper">
+                        SELECTED FOR YOUR SPACE
+                    </p>
+
+                    <h2 class="mt-3 text-2xl font-light text-furnova-navy">
+                        The furniture collection
+                    </h2>
+
+                </div>
+
+                <a href="categories.html"
+                    class="text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-8">
+
+                    EXPLORE BY ROOM ↗
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+
+        <section class="mx-auto max-w-7xl px-5 py-12 lg:px-10 lg:py-16">
+
+            <div class="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+
+
+                <!-- PRODUCT 1: SOFA -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Haven Sofa">
+
+                        <img
+                            src="Images/sofa.jpg"
+                            alt="Contemporary upholstered sofa in a warm neutral interior"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">LIVING ROOM</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Haven Sofa</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 85,000</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        A comfortable centrepiece with soft lines and a timeless silhouette.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 2: ARMCHAIR -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Forma Armchair">
+
+                        <img
+                            src="Images/armchair.jpg"
+                            alt="Modern upholstered armchair"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">LIVING ROOM</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Forma Armchair</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 28,500</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        A sculptural accent chair designed to make a quiet statement.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 3: DINING TABLE -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Oak Dining Table">
+
+                        <img
+                            src="Images/gallery-interior-2.jpg"
+                            alt="Natural oak dining table in a contemporary dining room"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">DINING</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Oak Dining Table</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 62,000</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        A warm, natural gathering place for meals and conversation.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 4: BED -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Solace Bed">
+
+                        <img
+                            src="Images/bed.jpg"
+                            alt="Elegant upholstered bed in a calm contemporary bedroom"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">BEDROOM</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Solace Bed</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 74,000</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        Clean lines and a relaxed design for a restful retreat.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 5: WARDROBE -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Alder Wardrobe">
+
+                        <img
+                            src="Images/wardrobe.jpg"
+                            alt="Modern wooden wardrobe with a minimal design"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">BEDROOM</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Alder Wardrobe</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 58,000</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        Practical storage with a natural finish and understated style.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 6: COFFEE TABLE -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Luma Coffee Table">
+
+                        <img
+                            src="Images/coffee-table.jpg"
+                            alt="Contemporary coffee table with a natural finish"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">LIVING ROOM</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Luma Coffee Table</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 19,500</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        A simple finishing touch for a thoughtfully styled living room.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 7: DESK -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Focus Desk">
+
+                        <img
+                            src="Images/office-desk.jpg"
+                            alt="Minimal natural oak home office desk"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">HOME OFFICE</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Focus Desk</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 31,000</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        A practical, uncluttered workspace for everyday productivity.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+                <!-- PRODUCT 8: DINING CHAIR -->
+
+                <article class="group">
+
+                    <a href="contact.html" aria-label="Enquire about The Gather Dining Chair">
+
+                        <img
+                            src="Images/dining.jpg"
+                            alt="Modern dining chair with a natural wood frame"
+                            class="h-72 w-full bg-[#E7E0D6] object-cover transition duration-500 group-hover:opacity-90">
+
+                    </a>
+
+                    <div class="mt-4 flex items-start justify-between gap-3">
+
+                        <div>
+                            <p class="text-[10px] tracking-widest text-furnova-copper">DINING</p>
+                            <h2 class="mt-2 text-lg text-furnova-navy">The Gather Dining Chair</h2>
+                        </div>
+
+                        <p class="whitespace-nowrap text-sm">KES 12,500</p>
+
+                    </div>
+
+                    <p class="mt-3 text-sm leading-6 text-furnova-charcoal/65">
+                        Comfortable seating with a warm finish and minimal profile.
+                    </p>
+
+                    <a href="contact.html"
+                        class="mt-4 inline-block text-xs font-semibold tracking-widest text-furnova-navy underline underline-offset-4">
+                        ENQUIRE ↗
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COLLECTION CTA ================= -->
+
+        <section class="bg-[#EDE7DD] px-5 py-16 text-center sm:py-20">
+
+            <p class="text-xs tracking-[0.22em] text-furnova-copper">
+                NEED A LITTLE GUIDANCE?
+            </p>
+
+            <h2 class="mt-4 text-3xl font-light text-furnova-navy sm:text-5xl">
+                Let's find the right piece.
+            </h2>
+
+            <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-furnova-charcoal/70">
+                Have a question about a product or planning a room?
+                Get in touch and tell us what you have in mind.
+            </p>
+
+            <a href="contact.html"
+                class="mt-7 inline-block bg-furnova-navy px-6 py-4 text-xs font-semibold tracking-widest text-white transition hover:bg-furnova-copper">
+
+                CONTACT FURNOVA ↗
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-furnova-navy text-furnova-ivory">
+
+        <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
+
+            <div>
+
+                <a href="index.html" class="text-xl font-semibold tracking-[0.2em]">
+                    FURNO<span class="text-furnova-copper">V</span>A
+                </a>
+
+                <p class="mt-4 max-w-xs text-sm leading-6 text-white/65">
+                    Thoughtfully chosen furniture for spaces that feel like you.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">EXPLORE</h2>
+
+                <div class="mt-4 flex flex-col gap-3 text-sm text-white/70">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our Story</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">VISIT US</h2>
+
+                <p class="mt-4 text-sm leading-6 text-white/70">
+                    Nairobi, Kenya
+                    <br>
+                    Monday–Saturday: 9 am–6 pm
+                    <br>
+                    Sunday: By appointment
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2 class="text-xs font-semibold tracking-widest">LET'S CONNECT</h2>
+
+                <p class="mt-4 text-sm leading-6 text-white/70">
+                    Have a question about a product?
+                </p>
+
+                <a href="contact.html"
+                    class="mt-3 inline-block text-sm text-furnova-oak underline underline-offset-4">
+                    Contact Furnova ↗
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/15 px-5 py-5 text-center text-xs text-white/50">
+            © 2026 Furnova. All rights reserved.
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
